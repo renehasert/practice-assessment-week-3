@@ -55,7 +55,7 @@ export default function Signup() {
         <input type="number" required onChange={inputHandler} name="phoneNumber" value={patient.phoneNumber}></input></p>
         <p><label>Gender</label>
         <select onChange={inputHandler} name="gender" value="{patient.gender}">
-          <option selected value="none"></option>
+          <option  value="none"></option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Other">Other</option>

@@ -17,7 +17,7 @@ export default function Contact() {
   console.log('time', time)
   console.log('day', day)
   return (
-    <div>
+    <div className="contact">
       <p>We are:<strong> {OfficeHours()} </strong></p>
       <p>To make an oppointment</p>
           <p>call:  020 555 55555</p>

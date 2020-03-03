@@ -52,7 +52,7 @@ const inputHandler = event =>{
   return (
     <div>
       <h1>Patient Database</h1>
-      <p>Doctor: 
+      <p><label>Doctor</label> 
         <select defaultValue onChange={inputHandler}>
           <option value="[]"></option>
           {doctors.map(item => (

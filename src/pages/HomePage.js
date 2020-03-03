@@ -10,6 +10,7 @@ export default function HomePage() {
       <Contact />
       <p><Link to="/schedule" className="button">Who is on duty?</Link></p>
       <p><Link to="/signup" className="button">I am a new patient</Link></p>
+
     </>
   )
 }
