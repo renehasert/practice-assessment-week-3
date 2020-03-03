@@ -45,23 +45,23 @@ export default function Signup() {
       <h1>Patient Signup</h1>
       {!signup && (
       <form>
-        <label>First name</label>
-        <input type="text" required onChange={inputHandler} name="firstName" value={patient.firstName}></input><br/>
-        <label>Last name</label>
-        <input type="text" required onChange={inputHandler} name="lastName" value={patient.lastName}></input><br/>
-        <label>E-mail</label>
-        <input type="email" required onChange={inputHandler} name="email" value={patient.email}></input><br/>
-        <label>Phone number</label>
-        <input type="number" required onChange={inputHandler} name="phoneNumber" value={patient.phoneNumber}></input><br/>
-        <label>Gender</label>
+        <p><label>First name</label>
+        <input type="text" required onChange={inputHandler} name="firstName" value={patient.firstName}></input></p>
+        <p><label>Last name</label>
+        <input type="text" required onChange={inputHandler} name="lastName" value={patient.lastName}></input></p>
+        <p><label>E-mail</label>
+        <input type="email" required onChange={inputHandler} name="email" value={patient.email}></input></p>
+        <p><label>Phone number</label>
+        <input type="number" required onChange={inputHandler} name="phoneNumber" value={patient.phoneNumber}></input></p>
+        <p><label>Gender</label>
         <select onChange={inputHandler} name="gender" value="{patient.gender}">
           <option selected value="none"></option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Other">Other</option>
-        </select><br/>
-        <label>Date of birth</label>
-        <input type="date" required min="1900-01-01" max={maxDate} onChange={inputHandler} name="dateOfBirth" value={patient.dateOfBirth }></input><br/>
+        </select></p>
+        <p><label>Date of birth</label>
+        <input type="date" required min="1900-01-01" max={maxDate} onChange={inputHandler} name="dateOfBirth" value={patient.dateOfBirth }></input></p>
         <button type="submit" onClick={submitPatient}>Sign up</button>
       </form>
       )}

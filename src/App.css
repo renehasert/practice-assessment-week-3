@@ -16,10 +16,12 @@ p{
   margin:2.5em;
 }
 /* Schedule */
-table{
+table {
+  border-collapse: collapse;
   border:1px solid #000;
 }
-th,td {
+th, td{
+  padding:10px 100px;
   border:1px solid #000;
 }
 thead{
@@ -40,6 +42,9 @@ label:after{
 }
 form{
   align-items: center;
+}
+form p{
+  margin:5px 0;
 }
 
 /* database */

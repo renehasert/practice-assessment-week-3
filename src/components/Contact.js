@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 
 export default function Contact() {
   const today = new Date();
@@ -20,10 +19,8 @@ export default function Contact() {
   return (
     <div>
       <p>We are:<strong> {OfficeHours()} </strong></p>
-      <p>To make an oppointment<br/>
-          call:  020 555 55555</p>
-        <p><Link to="/schedule" className="button">Who is on duty?</Link></p>
-        <p><Link to="/signup" className="button">I am a new patient</Link></p>
+      <p>To make an oppointment</p>
+          <p>call:  020 555 55555</p>
     </div>
   )
 }
