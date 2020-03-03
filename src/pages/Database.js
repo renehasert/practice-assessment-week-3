@@ -32,16 +32,7 @@ useEffect(() => {
   getPatients()
 }, [])
 
-
-const list = patients.filter((patient) => {
-  if (patient.doctorId === chosen.id) {
-  return true;
-} else if (chosen.id === 4){
-  return true;
-} else {
-  return false;
-}
-});
+const list = patients.filter(patient => patient.doctorId === chosen.id || chosen.id === 4)
 
 const inputHandler = event =>{
     const chosen_doc = JSON.parse(event.target.value)
