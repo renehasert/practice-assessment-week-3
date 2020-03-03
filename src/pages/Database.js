@@ -61,7 +61,7 @@ const inputHandler = event =>{
         </select>
       </p>
       {list.map(item=>( 
-      <PatientCard doctorId={item.doctorId} key={item.id} firstName={item.firstName} lastName={item.lastName} gender={item.gender} dateOfBirth={item.dateOfBirth} email={item.email} phoneNumber={item.phoneNumber} prescriptions={item.prescriptions} id={item.id}/>
+      <PatientCard key={item.id} {...item}/>
       ))}
     </div>
   )

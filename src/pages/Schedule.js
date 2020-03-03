@@ -33,7 +33,7 @@ export default function Schedule() {
           </thead>
           <tbody> 
           {doctors.map(doctor => (
-              <tr>
+              <tr key={doctor.id}>
                 <td>
                 {doctor.doctor}        
                 </td>

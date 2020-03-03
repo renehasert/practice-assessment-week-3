@@ -3,13 +3,13 @@ import '../App.css'
 
 export default function PatientCard(props) {
   const [details, set_details] = useState(false)
-
+  const [label, set_label] = useState("Show details")
 
   function toggle(){
     set_details(!details)
+    label === "Show details" ? set_label("Hide details") : set_label("Show details")
   }
-
-
+  
   return (
     <div className="patient" key={props.id}>
     <div>
@@ -26,7 +26,7 @@ export default function PatientCard(props) {
         <p>Prescriptions: {props.prescriptions.join(", ")}</p>
         </div>
         )}
-      <p><button onClick={toggle}>Show details</button></p>
+      <p><button onClick={toggle}>{label}</button></p>
       </div>
       )
 }
