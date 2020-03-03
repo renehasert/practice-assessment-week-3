@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <nav className="nav">
-          <NavLink to="/" exact activeStyle={{fontWeight:'bold'}}>Home</NavLink>|
-          <NavLink to="/schedule" exact activeStyle={{fontWeight:'bold'}}>Doctor Schedule</NavLink>|
-          <NavLink to="/signup" exact activeStyle={{fontWeight:'bold'}}>Patient Signup</NavLink>|
-          <NavLink to="/database" exact activeStyle={{fontWeight:'bold'}}>Patient Database</NavLink>|
+          <NavLink exact to="/">Home</NavLink>|
+          <NavLink to="/schedule">Doctor Schedule</NavLink>|
+          <NavLink to="/signup">Patient Signup</NavLink>|
+          <NavLink to="/database">Patient Database</NavLink>|
       </nav>
       <Switch>
         <Route exact path="/" component={HomePage} />

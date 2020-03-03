@@ -7,7 +7,7 @@ export default function Contact() {
   const OfficeHours = () => {
     if (!day){
       return "closed"
-    }else if(time > 16){
+    }else if(time > 17){
       return "closed"
     }else if (time < 8) {
       return "closed"
@@ -16,6 +16,7 @@ export default function Contact() {
     }}
   console.log('time', time)
   console.log('day', day)
+
   return (
     <div className="contact">
       <p>We are:<strong> {OfficeHours()} </strong></p>

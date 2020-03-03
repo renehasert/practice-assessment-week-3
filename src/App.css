@@ -20,6 +20,9 @@ body{
   color:#000;
   padding:10px;
 }
+.nav a.active {
+  font-weight: bold;
+}
 p{
   margin:2.5em;
 }
